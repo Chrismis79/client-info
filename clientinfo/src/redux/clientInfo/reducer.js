@@ -12,7 +12,6 @@ const clientReducer = (state = initialState, action) => {
             return {
                 ...state,
                 clients: [],
-                id: '',
                 isLoading: true,
                 error: null
             }
@@ -30,7 +29,7 @@ const clientReducer = (state = initialState, action) => {
                 error: action.payload
             }
         default:
-            return state
+            return state;
     }
 }
 export default clientReducer;
